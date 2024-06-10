@@ -7,9 +7,24 @@
     <title>Vue-email-list</title>
 </head>
 <body>
+    <div id="app">
+        <h1>
+            Vue Email List: 
+        </h1>
+
+        <h2>API TESTING BRANCH</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis vitae repellat harum minima eligendi laboriosam culpa, aut cupiditate </p>
+
+        <ul >
+            <li v-for="(email, index) in emailList" :key="index">
+                {{ email }}
+            </li>
+        </ul>
+    </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
